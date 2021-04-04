@@ -6,3 +6,12 @@ module CImageMagick [system] {
   link "MagickCore-6.Q16"
   export *
 }
+
+module CImageMagickMac [system] {
+  header "/usr/local/Cellar/imagemagick@6/6.9.12-5/include/ImageMagick-6/magick/ImageMagick.h"
+  header "/usr/local/Cellar/imagemagick@6/6.9.12-5/include/ImageMagick-6/magick/MagickCore.h"
+  header "/usr/local/Cellar/imagemagick@6/6.9.10-12/include/ImageMagick-6/wand/MagickWand.h"
+  link "MagickWand-6.Q16"
+  link "MagickCore-6.Q16"
+  export *
+}
